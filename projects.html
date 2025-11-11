@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some Selected Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .project {
+      margin-bottom: 40px;
+    }
+    .project img, .project video {
+      display: block;
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Some Selected Projects</h1>
+
+    <div class="project">
+      <h2>Text to 3d Scenarios Retrieval</h2>
+      <h4>Obtaining the most relevant 3d scene based on the given query.</h4>
+      <img src="./projects/scene_retrieval/method.png" width="450" height="200" style="display: block; margin: 0 auto;">
+      <h4>Different Data Types</h4>
+      <img src="./projects/scene_retrieval/data_types.png" width="550" height="250" style="display: block; margin: 0 auto;">
+      <h4>Various Proposed Approaches</h4>
+      <img src="./projects/scene_retrieval/approaches.png" width="550" height="250" style="display: block; margin: 0 auto;">
+
+    </div>
+
+    <hr>
+
+    <div class="project">
+    <h2>Surveillance Video Synopsis and Analysis</h2>
+    <p>
+      <ul>
+    <li> Implemented for Iran's National Elites Foundation </li>
+    <li> Using OpenCv and deep learning techniques for saving essential events. </li>
+    <li> Two types of videos, including the traffic videos and surveillance videos(including pedestrians)have been focused on in this project. </li>
+    <li> Developing some practical approaches for summarizing these types of videos </li>
+    <li> Implementing some analytical methods for anomaly detection </li>
+    <li> Using Hough Transform for lane detection </li>
+    <li> Using hierarchical clustering and dynamic time warping for directions clustering </li>
+    </ul>
+    </p>
+    <h4>Reconstructing Summarized Videos</h4>
+    <div style="text-align: center;">
+      <figure style="display: inline-block; margin: 10px;">
+        <img src="./projects/video_synopsis/gif_1.gif" alt="Preview A" width="300">
+        <figcaption>Original Video (950 frames)</figcaption>
+      </figure>
+
+      <figure style="display: inline-block; margin: 10px;">
+        <img src="./projects/video_synopsis/gif_2.gif" alt="Preview B" width="300">
+        <figcaption>Reconstructed Video (190 frame)</figcaption>
+      </figure>
+      </div>
+      <h4>Different Analysis like obtaining the most common Trajectories</h4>
+        <div style="text-align: center;">
+          <figure style="display: inline-block; margin: 10px;">
+            <img src="./projects/video_synopsis/trajectories1.png" alt="Preview A" width="300">
+          </figure>
+
+          <figure style="display: inline-block; margin: 10px;">
+            <img src="./projects/video_synopsis/trajectories2.png" alt="Preview B" width="300">
+      </figure>
+      </div>
+
+  <hr>
+
+  <div class="project">
+    <h2>Action Recognition in Compressed Domain Video</h2>
+    <p>
+      <ul>
+    <li> Using compressed domain elements like Motion Vectors and Residuals for detecting events in a video.</li>
+    <li> Implementing a new approach by using a window for accumulating the residuals in order to reduce the number of processed residual frames in compressed domain analysis.</li>
+    <li> Using one-dimensional convolutional layers for fast and efficient temporal pooling.</li>
+
+      </ul>
+
+    </p>
+    <h4>Original Video Vs Compressed Domain information</h4>
+    <div style="text-align: center;">
+      <figure style="display: inline-block; margin: 10px;">
+        <img src="./projects/action_recognition/orig_kth.gif" alt="Preview A" width="300" height="190">
+        <figcaption>Original Video</figcaption>
+      </figure>
+
+      <figure style="display: inline-block; margin: 10px;">
+        <img src="./projects/action_recognition/residual_kth.gif" alt="Preview B" width="300" height="190">
+        <figcaption>Reconstructed Video with Residuals</figcaption>
+      </figure>
+      </div>
+  </div>
+
+<!--  <div class="project">-->
+<!--    <h2>Project 3: Data Visualization</h2>-->
+<!--    <p>An interactive chart built with D3.js.</p>-->
+<!--    <img src="images/project3.png" alt="Screenshot of data visualization">-->
+<!--  </div>-->
+</div>
+</body>
+</html>
