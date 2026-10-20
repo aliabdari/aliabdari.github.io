@@ -1,59 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-    <style type="text/css">
-        /* Stolen from Sergey and Jon Barron */
-        /* with significant help from Debidatta Dwibedi's webpage */
-        a {
-            color: #1772d0;
-            text-decoration: none;
-        }
-
-        a:focus, a:hover {
-            color: #f09228;
-            text-decoration: none;
-        }
-
-        body, td, th {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 15px
-        }
-
-        strong {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-
-
-            font-size: 14px
-        }
-
-        strongred {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            color: 'red'
-
-            font-size: 14px
-        }
-
-        heading {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            */ font-size: 15px;
-            font-weight: 700
-        }
-
-
-
-
-
-
-    </style>
-    <!-- <link rel="icon" type="image/png" href="seal_icon.png"> -->
-    <script type="text/javascript" src="hidebib.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ali Abdari</title>
-    <meta name="Ali Abdari&#39;s CMU Homepage" http-equiv="Content-Type"
-          content="Ali Abdari&#39;s Homepage">
-
-    <link href="css" rel="stylesheet" type="text/css">
+    <meta name="description"
+          content="Ali Abdari — Computer Vision and Deep Learning Researcher. Ph.D. in Artificial Intelligence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+          rel="stylesheet">
+    <script>
+        // Apply the saved theme before first paint to avoid a flash
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                if (saved) document.documentElement.setAttribute('data-theme', saved);
+            } catch (e) {
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -69,347 +36,586 @@
 
         ga('create', 'UA-90857215-1', 'auto');
         ga('send', 'pageview');
-
-
-
-
-
-
-
     </script>
 </head>
 
 <body>
 
-<table width="960" border="0" align="center" cellspacing="0" cellpadding="20">
-    <tbody>
-    <tr>
-        <td>
-            <p align="center"><font size="7">Ali Abdari</font><br>
-            </p>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td width="67%" valign="middle" align="justify">
+<header>
+    <nav class="wrap">
+        <a href="#top" class="logo serif">A<em>a</em>.</a>
+        <div class="nav-links">
+            <a class="lnk" href="#about">About</a>
+            <a class="lnk" href="#publications">Publications</a>
+            <a class="lnk" href="#services">Services</a>
+            <a class="lnk" href="projects.html">Projects</a>
+            <a class="lnk" href="./data/CV_Ali_Abdari.pdf">CV</a>
+            <button type="button" class="icon-btn round theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+                </svg>
+                <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
 
-                        <p>
-                            I am Ali Abdari, currently working as a <strong>Computer Vision and Deep Learning
-                            Researcher</strong> at
-                            <a href="https://www.smc.it/homepage">SMC</a>. I hold a Ph.D. in Artificial
-                            Intelligence from the University of Naples Federico II, where I conducted my research at
-                            <a href="https://ailab.uniud.it/">AILAB</a> at the University of Udine, Italy, focusing on
-                            natural language-based retrieval of complex 3D scenes.
-                        </p>
+<main id="top" class="wrap">
 
-                        <p>
-                            I also hold an M.Sc. in Computer Science and a B.Sc. in Computer Engineering from Kharazmi
-                            University, Iran. My research interests include computer vision, image processing, machine
-                            learning, multimodal learning, and 3D representation learning.
-                        </p>
+    <section class="hero">
+        <div class="hero-text">
+            <div class="eyebrow">Hello, I'm</div>
+            <h1 class="serif">Ali <span class="grad">Abdari</span></h1>
+            <p class="lead">Ph.D. in Artificial Intelligence · Computer Vision &amp; Deep Learning Researcher at
+                <a class="lnk strong-link" href="https://www.smc.it/homepage">SMC</a></p>
+            <p class="sub">I work on natural-language retrieval of complex 3D scenes, multimodal learning and video
+                understanding — research carried out at AILAB, University of Udine, and published at ICCV, ICMR, MMM
+                and IEEE TMM.</p>
+            <div class="socials">
+                <a class="icon-btn" href="https://github.com/aliabdari" aria-label="GitHub" title="GitHub">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/>
+                    </svg>
+                </a>
+                <a class="icon-btn" href="https://scholar.google.com/citations?user=9qQUW_AAAAAJ&hl=en"
+                   aria-label="Google Scholar" title="Google Scholar">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 10 12 5 2 10l10 5 10-5z"/>
+                        <path d="M6 12v5c3 2.5 9 2.5 12 0v-5"/>
+                    </svg>
+                </a>
+                <a class="icon-btn" href="https://www.linkedin.com/in/ali-abdari/" aria-label="LinkedIn"
+                   title="LinkedIn">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+                <a class="icon-btn" href="mailto:aliabdari73@gmail.com" aria-label="Email" title="Email">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="5" width="18" height="14" rx="2"/>
+                        <path d="m3 7 9 6 9-6"/>
+                    </svg>
+                </a>
+                <a class="cv-btn" href="./data/CV_Ali_Abdari.pdf">Download CV
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 4v12M6 11l6 6 6-6M5 20h14"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-                        <p>
-                            Throughout my academic and industrial career, I have contributed to a wide range of projects
-                            spanning video analysis, action recognition, primate behavior analysis, agricultural and
-                            genetic data analysis, cross-modal learning, and 3D scene understanding. I have published
-                            papers in leading machine learning and computer vision venues and have organized workshops
-                            at premier conferences, including CVPR and ECCV.
-                        </p>
-                        </p>
-                        <p align="center">
-                            <a href="mailto:abdari.ali@spes.uniud.it">Email</a> /
-                            <a href="./data/CV_Ali_Abdari.pdf">CV</a> &nbsp;/&nbsp;
-                            <a href="https://github.com/aliabdari"> GitHub</a>&nbsp;/&nbsp;
-                            <a href="https://scholar.google.com/citations?user=9qQUW_AAAAAJ&hl=en"> Google Scholar </a>/
-                            <a href="https://www.linkedin.com/in/ali-abdari/"> Linkedin </a>/
-                            <a href="projects.html"> Projects </a>
+        <div class="hero-side">
+            <div class="portrait">
+                <svg class="ring" width="260" height="260" viewBox="0 0 260 260" fill="none" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#14b8a6"/>
+                            <stop offset=".55" stop-color="#0ea5e9"/>
+                            <stop offset="1" stop-color="#818cf8"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="130" cy="130" r="124" stroke="url(#rg)" stroke-width="3" stroke-dasharray="210 570"
+                            stroke-linecap="round"/>
+                </svg>
+                <svg class="ring2" width="260" height="260" viewBox="0 0 260 260" fill="none" aria-hidden="true">
+                    <circle cx="130" cy="130" r="117" stroke="#818cf8" stroke-width="1" stroke-dasharray="60 680"
+                            stroke-linecap="round"/>
+                </svg>
+                <img src="statics/personal_photo.jpg" alt="Portrait of Ali Abdari">
+                <div class="badge">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Computer Vision Researcher
+                </div>
+            </div>
 
-                        </p>
-                        <p align="center">
-                            Contact: ali.abdari [at] dgsspa.com / aliabdari73 [at] gmail.com
+            <div class="carousel" id="carousel" aria-roledescription="carousel" aria-label="Research highlights">
+                <div class="carousel-meta">
+                    <div>
+                        <span class="mono" id="slide-count">01 / 03</span>
+                        <strong id="slide-title" style="font-size: 15px">Text-to-3D Scene Retrieval</strong>
+                    </div>
+                    <span class="chip">Research Loop</span>
+                </div>
+                <div class="stage">
+                    <svg class="slide is-active" width="380" height="180" viewBox="0 0 380 180" fill="none"
+                         role="img" aria-label="A text query is matched against 3D apartments and the best match is ranked first"
+                         data-title="Text-to-3D Scene Retrieval"
+                         data-desc="Ranking 3D apartments from a free-form description — AdOCTeRA, FArMARe and ALCER3D.">
+                        <rect x="10" y="66" width="128" height="48" rx="10" stroke="#0ea5e9" stroke-width="1.5"/>
+                        <text x="22" y="86" font-size="10" fill="#0ea5e9" font-family="DM Sans">"a bright flat with</text>
+                        <text x="22" y="101" font-size="10" fill="#0ea5e9" font-family="DM Sans">two beds and a sofa"</text>
+                        <path d="M146 90h40" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="m182 85 6 5-6 5" stroke="#94a3b8" stroke-width="1.5"/>
+                        <rect x="200" y="14" width="74" height="70" rx="6" stroke="#14b8a6" stroke-width="2"/>
+                        <path d="M200 50h40M240 14v36M240 64v20" stroke="#14b8a6" stroke-width="1.5"/>
+                        <rect x="248" y="58" width="18" height="10" rx="2" fill="#14b8a6" opacity=".5"/>
+                        <text x="256" y="10" font-size="10" fill="#14b8a6" font-family="DM Sans" font-weight="600">#1</text>
+                        <rect x="290" y="14" width="74" height="70" rx="6" stroke="#818cf8" stroke-width="1.5" opacity=".7"/>
+                        <path d="M290 40h74M327 40v44" stroke="#818cf8" stroke-width="1.2" opacity=".7"/>
+                        <text x="346" y="10" font-size="10" fill="#818cf8" font-family="DM Sans">#2</text>
+                        <rect x="200" y="100" width="74" height="66" rx="6" stroke="#94a3b8" stroke-width="1.2" opacity=".6"/>
+                        <path d="M237 100v66M200 133h37" stroke="#94a3b8" stroke-width="1" opacity=".6"/>
+                        <rect x="290" y="100" width="74" height="66" rx="6" stroke="#94a3b8" stroke-width="1.2" opacity=".4"/>
+                        <path d="M290 126h74" stroke="#94a3b8" stroke-width="1" opacity=".4"/>
+                    </svg>
+                    <svg class="slide" width="380" height="180" viewBox="0 0 380 180" fill="none" role="img"
+                         aria-label="A virtual museum split hierarchically into rooms and artworks"
+                         data-title="Metaverse Museum Retrieval"
+                         data-desc="Hierarchical, art-expert-aware representations for finding virtual museums — HierArtEx.">
+                        <rect x="150" y="12" width="80" height="34" rx="8" stroke="#14b8a6" stroke-width="2"/>
+                        <text x="190" y="33" text-anchor="middle" font-size="11" fill="#14b8a6" font-family="DM Sans" font-weight="600">Museum</text>
+                        <path d="M190 46v14M80 60h220M80 60v12M190 60v12M300 60v12" stroke="#94a3b8" stroke-width="1.2"/>
+                        <rect x="44" y="72" width="72" height="28" rx="7" stroke="#0ea5e9" stroke-width="1.5"/>
+                        <text x="80" y="90" text-anchor="middle" font-size="10" fill="#0ea5e9" font-family="DM Sans">Room 1</text>
+                        <rect x="154" y="72" width="72" height="28" rx="7" stroke="#0ea5e9" stroke-width="1.5"/>
+                        <text x="190" y="90" text-anchor="middle" font-size="10" fill="#0ea5e9" font-family="DM Sans">Room 2</text>
+                        <rect x="264" y="72" width="72" height="28" rx="7" stroke="#0ea5e9" stroke-width="1.5"/>
+                        <text x="300" y="90" text-anchor="middle" font-size="10" fill="#0ea5e9" font-family="DM Sans">Room 3</text>
+                        <path d="M62 100v18M98 100v18M172 100v18M208 100v18M282 100v18M318 100v18" stroke="#94a3b8" stroke-width="1"/>
+                        <rect x="50" y="118" width="24" height="30" rx="3" stroke="#818cf8" stroke-width="1.3"/>
+                        <rect x="86" y="118" width="24" height="30" rx="3" stroke="#818cf8" stroke-width="1.3"/>
+                        <rect x="160" y="118" width="24" height="30" rx="3" stroke="#818cf8" stroke-width="1.3"/>
+                        <rect x="196" y="118" width="24" height="30" rx="3" fill="#818cf8" opacity=".5"/>
+                        <rect x="270" y="118" width="24" height="30" rx="3" stroke="#818cf8" stroke-width="1.3"/>
+                        <rect x="306" y="118" width="24" height="30" rx="3" stroke="#818cf8" stroke-width="1.3"/>
+                        <text x="190" y="170" text-anchor="middle" font-size="10" fill="#94a3b8" font-family="DM Sans">art-expert features at every level</text>
+                    </svg>
+                    <svg class="slide" width="380" height="180" viewBox="0 0 380 180" fill="none" role="img"
+                         aria-label="Video frames flow through a 1D convolutional network into an action label"
+                         data-title="Video Understanding"
+                         data-desc="Action recognition and violence detection directly on compressed video streams.">
+                        <rect x="14" y="40" width="150" height="100" rx="8" stroke="#94a3b8" stroke-width="1.2"/>
+                        <rect x="26" y="56" width="38" height="68" rx="4" stroke="#0ea5e9" stroke-width="1.5"/>
+                        <rect x="70" y="56" width="38" height="68" rx="4" stroke="#0ea5e9" stroke-width="1.5" opacity=".75"/>
+                        <rect x="114" y="56" width="38" height="68" rx="4" stroke="#0ea5e9" stroke-width="1.5" opacity=".5"/>
+                        <path d="M14 48h150M14 132h150" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 5"/>
+                        <path d="M172 90h30" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+                        <path d="m198 85 6 5-6 5" stroke="#94a3b8" stroke-width="1.5"/>
+                        <path d="M214 60h16v60h-16zM238 70h16v40h-16zM262 78h16v24h-16z" stroke="#14b8a6" stroke-width="1.5"/>
+                        <path d="M284 90h18" stroke="#94a3b8" stroke-width="1.5"/>
+                        <rect x="306" y="64" width="62" height="22" rx="11" fill="#14b8a6" opacity=".2"/>
+                        <text x="337" y="79" text-anchor="middle" font-size="10" fill="#14b8a6" font-family="DM Sans" font-weight="600">action</text>
+                        <rect x="306" y="94" width="62" height="22" rx="11" stroke="#94a3b8" stroke-width="1"/>
+                        <text x="337" y="109" text-anchor="middle" font-size="10" fill="#94a3b8" font-family="DM Sans">normal</text>
+                    </svg>
+                    <button type="button" class="icon-btn round nav-prev" aria-label="Previous research slide">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="icon-btn round nav-next" aria-label="Next research slide">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="carousel-desc" id="slide-desc" aria-live="polite">Ranking 3D apartments from a free-form
+                    description — AdOCTeRA, FArMARe and ALCER3D.</p>
+                <div class="dots" id="dots"></div>
+            </div>
+        </div>
+    </section>
 
-                        </p>
+    <div class="scroll-hint">
+        <span>Scroll</span>
+        <svg class="bob" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M9 3v12M4 10l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </svg>
+    </div>
 
+    <section>
+        <div class="sec-head"><h2 class="serif">Explore</h2></div>
+        <div class="grid">
+            <a class="card tile" href="#publications">
+                <div class="tile-ico">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h5"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="tile-title">Publications
+                        <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </div>
+                    <div class="tile-sub">ICCV · ICMR · MMM · IEEE TMM</div>
+                </div>
+            </a>
+            <a class="card tile" href="projects.html">
+                <div class="tile-ico">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="tile-title">Projects
+                        <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </div>
+                    <div class="tile-sub">Scene Retrieval · Action Recognition · Video Synopsis</div>
+                </div>
+            </a>
+            <a class="card tile" href="./data/CV_Ali_Abdari.pdf">
+                <div class="tile-ico">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM19 8v6M22 11h-6"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="tile-title">CV / Resume
+                        <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </div>
+                    <div class="tile-sub">Experience · Education · Awards</div>
+                </div>
+            </a>
+            <a class="card tile" href="#services">
+                <div class="tile-ico">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c3 2.5 9 2.5 12 0v-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="tile-title">Academic Services
+                        <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </div>
+                    <div class="tile-sub">CVPR · ECCV workshops · IRCDL</div>
+                </div>
+            </a>
+            <a class="card tile" href="https://github.com/aliabdari">
+                <div class="tile-ico">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="tile-title">Code
+                        <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </div>
+                    <div class="tile-sub">Open-source research on GitHub</div>
+                </div>
+            </a>
+            <a class="card tile" href="mailto:aliabdari73@gmail.com">
+                <div class="tile-ico">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 5h18v14H3zM3 7l9 6 9-6"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="tile-title">Contact
+                        <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </div>
+                    <div class="tile-sub">Collaborations · Research questions</div>
+                </div>
+            </a>
+        </div>
+    </section>
 
-                    </td>
-                    <td width="33%"><img src="statics/personal_photo.jpg" width="90"
-                                         style="background-repeat: no-repeat;background-position: 50%;border-radius: 50%;width: 200px;height: 230px;">
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+    <section id="about" class="about">
+        <div class="about-head">
+            <span class="label">About</span>
+            <h2 class="serif">From pixels to <em>3D scenes</em>.</h2>
+        </div>
+        <div class="about-body">
+            <p>I am a <strong>Computer Vision and Deep Learning Researcher</strong> at
+                <a class="lnk strong-link" href="https://www.smc.it/homepage">SMC</a>. I hold a Ph.D. in Artificial
+                Intelligence from the University of Naples Federico II, where I conducted my research at
+                <a class="lnk strong-link" href="https://ailab.uniud.it/">AILAB</a> at the University of Udine, Italy,
+                focusing on natural language-based retrieval of complex 3D scenes.</p>
+            <p>I also hold an M.Sc. in Computer Science and a B.Sc. in Computer Engineering from Kharazmi University,
+                Iran. My research interests include computer vision, image processing, machine learning, multimodal
+                learning, and 3D representation learning.</p>
+            <p>Throughout my academic and industrial career, I have contributed to a wide range of projects spanning
+                video analysis, action recognition, primate behavior analysis, agricultural and genetic data analysis,
+                cross-modal learning, and 3D scene understanding. I have published papers in leading machine learning
+                and computer vision venues and have organized workshops at premier conferences, including CVPR and
+                ECCV.</p>
+            <div class="tags">
+                <span>Computer Vision</span>
+                <span>Multimodal Learning</span>
+                <span>3D Representation Learning</span>
+                <span>Cross-modal Retrieval</span>
+                <span>Video Analysis</span>
+            </div>
+        </div>
+    </section>
 
+    <section id="publications">
+        <div class="sec-head"><h2 class="serif">Selected <em>Publications</em></h2></div>
+        <div class="pubs">
 
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <!--ICMR2025-->
+            <article class="card pub">
+                <div class="pub-img"><img src="statics/adoctera.png" alt="AdOCTeRA overview figure" loading="lazy"></div>
+                <div class="pub-body">
+                    <div class="pub-meta"><span class="venue-tag">ICMR 2025</span><span class="venue">International Conference on Multimedia Retrieval</span></div>
+                    <a class="lnk pub-title" href="https://dl.acm.org/doi/10.1145/3731715.3734535">Reproducibility
+                        Companion Paper: AdOCTeRA – Adaptive Optimization Constraints for Improved Text-Guided Retrieval
+                        of Apartments</a>
+                    <div class="authors"><strong>Ali Abdari</strong>,
+                        <a class="lnk" href="https://aranciokov.github.io/">Alex Falcon</a>,
+                        <a class="lnk" href="https://people.uniud.it/page/giuseppe.serra">Giuseppe Serra</a></div>
+                    <div class="pub-links">
+                        <a class="pill" href="https://dl.acm.org/doi/10.1145/3731715.3734535">Paper</a>
+                        <a class="pill" href="https://github.com/aliabdari/AdOCTeRA">Code</a>
+                    </div>
+                </div>
+            </article>
 
-                <tbody>
-                <tr>
-                    <td>
-                        <h2 id="publications">Selected Publications</h2></td>
-                </tr>
+            <!--ALCER3D-->
+            <article class="card pub">
+                <div class="pub-img"><img src="statics/ALCER3d.png" alt="ALCER3D overview figure" loading="lazy"></div>
+                <div class="pub-body">
+                    <div class="pub-meta"><span class="venue-tag">IEEE TMM 2025</span><span class="venue">IEEE Transactions on Multimedia</span></div>
+                    <a class="lnk pub-title" href="https://ieeexplore.ieee.org/document/11175509">ALCER3D: Adaptive
+                        Learning Constraints for Enhanced Retrieval of Complex Indoor 3D Scenarios</a>
+                    <div class="authors"><a class="lnk" href="https://aranciokov.github.io/">Alex Falcon</a>,
+                        <strong>Ali Abdari</strong>,
+                        <a class="lnk" href="https://people.uniud.it/page/giuseppe.serra">Giuseppe Serra</a></div>
+                    <div class="pub-links">
+                        <a class="pill" href="https://ieeexplore.ieee.org/document/11175509">Paper</a>
+                        <a class="pill" href="https://github.com/aliabdari/ALCER3D">Code</a>
+                    </div>
+                </div>
+            </article>
 
+            <!--MMM 2025-->
+            <article class="card pub">
+                <div class="pub-img"><img src="statics/HierArtEx.png" alt="HierArtEx overview figure" loading="lazy"></div>
+                <div class="pub-body">
+                    <div class="pub-meta"><span class="venue-tag">MMM 2025</span><span class="venue">International Conference on Multimedia Modeling</span></div>
+                    <a class="lnk pub-title" href="https://link.springer.com/chapter/10.1007/978-981-96-2061-6_5">HierArtEx:
+                        Hierarchical Representations and Art Experts Supporting the Retrieval of Museums in the
+                        Metaverse</a>
+                    <div class="authors"><a class="lnk" href="https://aranciokov.github.io/">Alex Falcon</a>,
+                        <strong>Ali Abdari</strong>,
+                        <a class="lnk" href="https://people.uniud.it/page/giuseppe.serra">Giuseppe Serra</a></div>
+                    <div class="pub-links">
+                        <a class="pill" href="https://link.springer.com/chapter/10.1007/978-981-96-2061-6_5">Paper</a>
+                        <a class="pill" href="https://github.com/aranciokov/HierArtEx-MMM2025">Code</a>
+                    </div>
+                </div>
+            </article>
 
-                <!--ICMR2025-->
-                <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle"><img
-                            src="statics/adoctera.png" width="200"></a>
-                    </td>
-                    <td width="58%" valign="top">
+            <!--ICMR 2024-->
+            <article class="card pub">
+                <div class="pub-img"><img src="statics/adoctera.png" alt="AdOCTeRA overview figure" loading="lazy"></div>
+                <div class="pub-body">
+                    <div class="pub-meta"><span class="venue-tag">ICMR 2024</span><span class="venue">International Conference on Multimedia Retrieval</span></div>
+                    <a class="lnk pub-title" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9685835">AdOCTeRA:
+                        Adaptive Optimization Constraints for improved Text-guided Retrieval of Apartments</a>
+                    <div class="authors"><strong>Ali Abdari</strong>,
+                        <a class="lnk" href="https://aranciokov.github.io/">Alex Falcon</a>,
+                        <a class="lnk" href="https://people.uniud.it/page/giuseppe.serra">Giuseppe Serra</a></div>
+                    <div class="pub-links">
+                        <a class="pill" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9685835">Paper</a>
+                        <a class="pill" href="https://github.com/aliabdari/AdOCTeRA">Code</a>
+                    </div>
+                </div>
+            </article>
 
-                        <a href="https://dl.acm.org/doi/10.1145/3731715.3734535">
-                            <heading>Reproducibility Companion Paper: AdOCTeRA – Adaptive Optimization Constraints for
-                                Improved Text-Guided Retrieval of Apartments
-                            </heading>
-                        </a>
-                        <br>
-                        <b> Ali Abdari</b>,
-                        <a href="https://aranciokov.github.io/"> Alex Falcon </a>,
-                        <a href="https://people.uniud.it/page/giuseppe.serra"> Giuseppe Serra </a>
-                        <br>
-                        <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">International
-                            Conference on Multimedia Retrieval, 2025</a></em>
-                        <br>
-                        <a href="https://github.com/aliabdari/AdOCTeRA">GitHub</a>
-                        <p></p>
-                    </td>
-                </tr>
+            <!--MMM 2024-->
+            <article class="card pub">
+                <div class="pub-img"><img src="statics/mmm2024.png" alt="Language-based Metaverse retrieval overview figure" loading="lazy"></div>
+                <div class="pub-body">
+                    <div class="pub-meta"><span class="venue-tag">MMM 2024</span><span class="venue">International Conference on Multimedia Modeling</span></div>
+                    <a class="lnk pub-title" href="https://link.springer.com/chapter/10.1007/978-3-031-53311-2_35">A
+                        Language-based solution to enable Metaverse Retrieval</a>
+                    <div class="authors"><strong>Ali Abdari</strong>,
+                        <a class="lnk" href="https://aranciokov.github.io/">Alex Falcon</a>,
+                        <a class="lnk" href="https://people.uniud.it/page/giuseppe.serra">Giuseppe Serra</a></div>
+                    <div class="pub-links">
+                        <a class="pill" href="https://link.springer.com/chapter/10.1007/978-3-031-53311-2_35">Paper</a>
+                        <a class="pill" href="https://github.com/aliabdari/NLP_to_rank_artistic_Metaverses">Code</a>
+                    </div>
+                </div>
+            </article>
 
-                <!--ALCER3D-->
-                <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle"><img
-                            src="statics/ALCER3d.png" width="200"></a>
-                    </td>
-                    <td width="58%" valign="top">
+            <!--Tools and Application 2024-->
+            <article class="card pub">
+                <div class="pub-img"><img src="statics/tools_and_application_24.png" alt="Violence detection pipeline figure" loading="lazy"></div>
+                <div class="pub-body">
+                    <div class="pub-meta"><span class="venue-tag">MTAP 2024</span><span class="venue">Multimedia Tools and Applications</span></div>
+                    <a class="lnk pub-title" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483558">Violence
+                        detection in compressed video</a>
+                    <div class="authors"><a class="lnk" href="https://scholar.google.com/citations?user=fnx57BcAAAAJ&hl=en">Narges
+                        Honarjoo</a>,
+                        <strong>Ali Abdari</strong>,
+                        <a class="lnk" href="https://scholar.google.com/citations?user=eK03yPgAAAAJ&hl=en">Azadeh
+                            Mansouri</a></div>
+                    <div class="pub-links">
+                        <a class="pill" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483558">Paper</a>
+                        <a class="pill" href="https://github.com/hnarges91/violence-detection">Code</a>
+                    </div>
+                </div>
+            </article>
 
-                        <a href="https://ieeexplore.ieee.org/document/11175509">
-                            <heading>ALCER3D: Adaptive Learning Constraints for Enhanced Retrieval of Complex Indoor 3D
-                                Scenarios
-                            </heading>
-                        </a>
+            <!--FarMare 2023-->
+            <article class="card pub">
+                <div class="pub-img"><img src="statics/FarMare.png" alt="FArMARe overview figure" loading="lazy"></div>
+                <div class="pub-body">
+                    <div class="pub-meta"><span class="venue-tag">ICCVW 2023</span><span class="venue">CV4Metaverse Workshop at ICCV</span></div>
+                    <a class="lnk pub-title"
+                       href="https://openaccess.thecvf.com/content/ICCV2023W/CV4Metaverse/html/Abdari_FArMARe_a_Furniture-Aware_Multi-Task_Methodology_for_Recommending_Apartments_Based_on_ICCVW_2023_paper.html">FArMARe:
+                        a Furniture-Aware Multi-task methodology for Recommending Apartments based on the user
+                        interests</a>
+                    <div class="authors"><strong>Ali Abdari</strong>,
+                        <a class="lnk" href="https://aranciokov.github.io/">Alex Falcon</a>,
+                        <a class="lnk" href="https://people.uniud.it/page/giuseppe.serra">Giuseppe Serra</a></div>
+                    <div class="pub-links">
+                        <a class="pill"
+                           href="https://openaccess.thecvf.com/content/ICCV2023W/CV4Metaverse/html/Abdari_FArMARe_a_Furniture-Aware_Multi-Task_Methodology_for_Recommending_Apartments_Based_on_ICCVW_2023_paper.html">Paper</a>
+                        <a class="pill" href="https://github.com/aliabdari/FArMARe">Code</a>
+                    </div>
+                </div>
+            </article>
 
-                        <br>
-                        <a href="https://aranciokov.github.io/"> Alex Falcon </a>,
-                        <b> Ali Abdari</b>,
-                        <a href="https://people.uniud.it/page/giuseppe.serra"> Giuseppe Serra </a>
-                        <br>
-                        <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE Transactions on
-                            Multimedia, 2025</a></em>
-                        <br>
-                        <a href="https://github.com/aliabdari/ALCER3D">GitHub</a>
-                        <p></p>
-                    </td>
-                </tr>
+        </div>
+    </section>
 
-                <!--MMM 2025-->
-                <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle"><img
-                            src="statics/HierArtEx.png" width="200"></a>
-                    </td>
-                    <td width="58%" valign="top">
+    <section id="services">
+        <div class="sec-head"><h2 class="serif">Academic <em>Services</em></h2></div>
+        <ol class="timeline">
+            <li><span class="tl-rail"></span>
+                <div class="tl-body"><span class="tl-year">2025</span><span class="tl-text">Organizing the
+                    <a class="lnk strong-link" href="https://sites.google.com/view/cv4metaverse-2025/">4th edition of CV4Metaverse Workshop</a> at
+                    <a class="lnk strong-link" href="https://cvpr.thecvf.com/Conferences/2025/workshop-list">CVPR 2025</a></span></div>
+            </li>
+            <li><span class="tl-rail"></span>
+                <div class="tl-body"><span class="tl-year">2025</span><span class="tl-text">Organizing the
+                    <a class="lnk strong-link" href="https://ircdl2025.uniud.it/">21st edition of IRCDL</a> conference</span></div>
+            </li>
+            <li><span class="tl-rail"></span>
+                <div class="tl-body"><span class="tl-year">2025</span><span class="tl-text">Supervising a Ph.D. student
+                    in agricultural and meteorological data processing using machine learning</span></div>
+            </li>
+            <li><span class="tl-rail"></span>
+                <div class="tl-body"><span class="tl-year">2024 – 2025</span><span class="tl-text">Supervising a
+                    researcher in the field of processing plant genetic data using machine learning</span></div>
+            </li>
+            <li><span class="tl-rail"></span>
+                <div class="tl-body"><span class="tl-year">2024</span><span class="tl-text">Organizing the
+                    <a class="lnk strong-link" href="https://sites.google.com/view/cv4metaverse-2024/">3rd edition of CV4Metaverse Workshop</a> at
+                    <a class="lnk strong-link" href="https://eccv.ecva.net/Conferences/2024/Workshops">ECCV 2024</a></span></div>
+            </li>
+            <li><span class="tl-rail"></span>
+                <div class="tl-body"><span class="tl-year">2024</span><span class="tl-text">Organizing the
+                    <a class="lnk strong-link" href="https://ailab.uniud.it/apartment-recommendation-challenge/">Metaverse Apartment Retrieval Challenge</a> at ECCV 2024</span></div>
+            </li>
+        </ol>
+    </section>
+</main>
 
-                        <a href="https://link.springer.com/chapter/10.1007/978-981-96-2061-6_5">
-                            <heading>HierArtEx: Hierarchical Representations and Art Experts Supporting the Retrieval of
-                                Museums in the Metaverse
-                            </heading>
-                        </a>
-                        <br>
-                        <a href="https://aranciokov.github.io/"> Alex Falcon </a>,
-                        <b> Ali Abdari</b>,
-                        <a href="https://people.uniud.it/page/giuseppe.serra"> Giuseppe Serra </a>
-                        <br>
-                        <em><a href="https://mmm2025.net/">International Conference on Multimedia Modeling,
-                            2025</a></em>
-                        <br>
-                        <a href="https://github.com/aranciokov/HierArtEx-MMM2025">GitHub</a>
-                        <p></p>
-                    </td>
-                </tr>
+<footer>
+    <div class="wrap foot">
+        <span>© <span id="year">2026</span> Ali Abdari · ali.abdari [at] dgsspa.com · aliabdari73 [at] gmail.com</span>
+        <a class="lnk" href="#top">Back to top
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19V5M6 11l6-6 6 6"/>
+            </svg>
+        </a>
+    </div>
+</footer>
 
-                <!--ICMR 2024-->
-                <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle"><img
-                            src="statics/adoctera.png" width="200"></a>
-                    </td>
-                    <td width="58%" valign="top">
+<script src="site.js"></script>
+<script>
+    // Research carousel
+    (function () {
+        var slides = document.querySelectorAll('#carousel .slide');
+        var count = document.getElementById('slide-count');
+        var title = document.getElementById('slide-title');
+        var desc = document.getElementById('slide-desc');
+        var dotsBox = document.getElementById('dots');
+        var idx = 0, timer = null;
+        var pad = function (n) {
+            return (n < 10 ? '0' : '') + n;
+        };
 
-                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9685835">
-                            <heading>AdOCTeRA: Adaptive Optimization Constraints for improved Text-guided Retrieval of
-                                Apartments
-                            </heading>
-                        </a>
-                        <br>
-                        <b> Ali Abdari</b>,
-                        <a href="https://aranciokov.github.io/"> Alex Falcon </a>,
-                        <a href="https://people.uniud.it/page/giuseppe.serra"> Giuseppe Serra </a>
-                        <br>
-                        <em><a href="https://icmr2024.org/">International Conference on Multimedia Retrieval,
-                            2024</a></em>
-                        <br>
-                        <a href="https://github.com/aliabdari/AdOCTeRA">GitHub</a>
-                        <p></p>
-                    </td>
-                </tr>
+        var dots = Array.prototype.map.call(slides, function (s, i) {
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.setAttribute('aria-label', 'Show ' + s.getAttribute('data-title'));
+            b.appendChild(document.createElement('span'));
+            b.addEventListener('click', function () {
+                show(i);
+                restart();
+            });
+            dotsBox.appendChild(b);
+            return b;
+        });
 
-                <!--MMM 2024-->
-                <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle"><img
-                            src="statics/mmm2024.png" width="200"></a>
-                    </td>
-                    <td width="58%" valign="top">
+        function show(i) {
+            idx = (i + slides.length) % slides.length;
+            slides.forEach(function (s, j) {
+                s.classList.toggle('is-active', j === idx);
+                dots[j].setAttribute('aria-current', j === idx ? 'true' : 'false');
+            });
+            count.textContent = pad(idx + 1) + ' / ' + pad(slides.length);
+            title.textContent = slides[idx].getAttribute('data-title');
+            desc.textContent = slides[idx].getAttribute('data-desc');
+        }
 
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-53311-2_35">
-                            <heading>A Language-based solution to enable Metaverse Retrieval</heading>
-                        </a>
-                        <br>
-                        <b> Ali Abdari</b>,
-                        <a href="https://aranciokov.github.io/"> Alex Falcon </a>,
-                        <a href="https://people.uniud.it/page/giuseppe.serra"> Giuseppe Serra </a>
-                        <br>
-                        <em><a href="https://mmm2024.org/">International Conference on Multimedia Modeling,
-                            2024</a></em>
-                        <br>
-                        <a href="https://github.com/aliabdari/NLP_to_rank_artistic_Metaverses">GitHub</a>
-                        <p></p>
-                    </td>
-                </tr>
+        function restart() {
+            clearInterval(timer);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                timer = setInterval(function () {
+                    show(idx + 1);
+                }, 6000);
+            }
+        }
 
-                <!--Tools and Application 2024-->
-                <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle"><img
-                            src="statics/tools_and_application_24.png" width="200"></a>
-                    </td>
-                    <td width="58%" valign="top">
+        document.querySelector('#carousel .nav-prev').addEventListener('click', function () {
+            show(idx - 1);
+            restart();
+        });
+        document.querySelector('#carousel .nav-next').addEventListener('click', function () {
+            show(idx + 1);
+            restart();
+        });
+        show(0);
+        restart();
+    })();
 
-                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483558">
-                            <heading>Violence detection in compressed video</heading>
-                        </a>
-                        <br>
-                        <a href="https://scholar.google.com/citations?user=fnx57BcAAAAJ&hl=en"> Narges Honarjoo</a>,
-                        <b> Ali Abdari</b>,
-                        <a href="https://scholar.google.com/citations?user=eK03yPgAAAAJ&hl=en"> Azadeh Mansouri</a>
-                        <br>
-                        <em><a href="https://link.springer.com/journal/11042">Multimedia Tools and Application, 2024</a></em>
-                        <br>
-                        <a href="https://github.com/hnarges91/violence-detection">GitHub</a>
-                        <p></p>
-                    </td>
-                </tr>
-
-                <!--FarMare 2023-->
-                <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle"><img
-                            src="statics/FarMare.png" width="200"></a>
-                    </td>
-                    <td width="58%" valign="top">
-
-                        <a href="https://openaccess.thecvf.com/content/ICCV2023W/CV4Metaverse/html/Abdari_FArMARe_a_Furniture-Aware_Multi-Task_Methodology_for_Recommending_Apartments_Based_on_ICCVW_2023_paper.html">
-                            <heading>FArMARe: a Furniture-Aware Multi-task methodology for Recommending Apartments based
-                                on the user interests
-                            </heading>
-                        </a>
-                        <br>
-                        <b> Ali Abdari</b>,
-                        <a href="https://aranciokov.github.io/"> Alex Falcon </a>,
-                        <a href="https://people.uniud.it/page/giuseppe.serra"> Giuseppe Serra </a>
-                        <br>
-                        <em><a href="https://sites.google.com/view/cv4metaverse/?authuser=0">CV4Metaverse Workshop at
-                            ICCV, 2023</a></em>
-                        <br>
-                        <a href="https://github.com/aliabdari/FArMARe">GitHub</a>
-                        <p></p>
-                    </td>
-                </tr>
-
-                <!--                <tr>-->
-                <!--                    <td style="padding:20px;width:20%;vertical-align:middle"><img-->
-                <!--                            src="statics/violence_1.png" width="200"></a>-->
-                <!--                    </td>-->
-                <!--                    <td width="58%" valign="top">-->
-
-                <!--                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9685835">-->
-                <!--                            <heading>Violence Detection Using One-Dimensional Convolutional Networks</heading>-->
-                <!--                        </a>-->
-                <!--                        <br>-->
-                <!--                        <a href="https://scholar.google.com/citations?user=fnx57BcAAAAJ&hl=en"> Narges Honarjoo</a>,-->
-                <!--                        <b> Ali Abdari</b>,-->
-                <!--                        <a href="https://scholar.google.com/citations?user=eK03yPgAAAAJ&hl=en"> Azadeh Mansouri</a>-->
-                <!--                        <br>-->
-                <!--                        <em>12th International Conference on Information and Knowledge Technology (IKT)</em>-->
-                <!--                        <p></p>-->
-                <!--                    </td>-->
-                <!--                </tr>-->
-
-                <!--                <tr>-->
-                <!--                    <td style="padding:20px;width:20%;vertical-align:middle"><img-->
-                <!--                            src="statics/violence_1.png" width="200"></a>-->
-                <!--                    </td>-->
-                <!--                    <td width="58%" valign="top">-->
-
-                <!--                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483558">-->
-                <!--                            <heading>Violence detection using pre-trained models</heading>-->
-                <!--                        </a>-->
-                <!--                        <br>-->
-                <!--                        <a href="https://scholar.google.com/citations?user=fnx57BcAAAAJ&hl=en"> Narges Honarjoo</a>,-->
-                <!--                        <b> Ali Abdari</b>,-->
-                <!--                        <a href="https://scholar.google.com/citations?user=eK03yPgAAAAJ&hl=en"> Azadeh Mansouri</a>-->
-                <!--                        <br>-->
-                <!--                        <em>International Conference on Pattern Recognition and Image Analysis (IPRIA)</em>-->
-                <!--                        <p></p>-->
-                <!--                    </td>-->
-                <!--                </tr>-->
-
-
-                </tbody>
-            </table>
-
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-                <tbody>
-                <tr>
-                    <td>
-                        <h2 id="acedemic_services">Academic Services</h2></td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 40px;">
-                        [2025] Organizing the <a href="https://sites.google.com/view/cv4metaverse-2025/">4th edition of
-                        CV4Metaverse Workshop</a> at <a href="https://cvpr.thecvf.com/Conferences/2025/workshop-list">CVPR
-                        2025</a>
-                        <br>
-                        [2025] Organizing the <a href="https://ircdl2025.uniud.it/">21st edition of IRCDL</a> conference
-                        <br>
-                        [2025] Supervising a Ph.D. student in agricultural and meteorological data processing using
-                        machine learning
-                        <br>
-                        [2024 - 2025] Supervising a researcher in the field of processing plant genetic data using
-                        machine learning
-                        <br>
-                        [2024] Organizing the <a href="https://sites.google.com/view/cv4metaverse-2024/">3rd edition of
-                        CV4Metaverse Workshop</a> at <a href="https://eccv.ecva.net/Conferences/2024/Workshops">ECCV
-                        2024</a>
-                        <br>
-                        [2024] Organizing <a href="https://ailab.uniud.it/apartment-recommendation-challenge/">Metaverse
-                        Apartment Retrieval Challenge</a> at ECCV 2024
-                    </td>
-                </tr>
-
-                </tbody>
-
-            </table>
-
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td>
-                        <br>
-                        <p align="right"><font size="1">
-                            <a href="https://jonbarron.info/">Based on the Jon Barron's webpage</a>
-                        </font></p>
-
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-</table>
-
-
+</script>
 </body>
 </html>
