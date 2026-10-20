@@ -928,7 +928,12 @@ footer {
     max-width: 360px;
 }
 
-.figs img, .fig-single img {
+.figs-compact {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
+}
+
+.figs img, .fig-single img,
+.figs video, .fig-single video {
     width: 100%;
     height: auto;
     border-radius: 12px;
